@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        input{
+            border-top-style:hidden;
+            border-right-style:hidden;
+            border-left-style:hidden;
+            border-bottom-style:groove;
+            background-color: #eee;
+        }
+        .vd{
+                border-top-style:hidden;
+                border-right-style:hidden;
+                border-left-style:groove;
+                border-bottom-style:hidden;
+                background-color: #eee;
+        }
+        div{
+            border: 1px solid #000;
+            padding:15px;        
+        }
+        .vl
+        {
+            border-left: 1px solid black;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+                    
+        }
+       
+        </style>
+</head>
+<body>
+    <h4 style="text-align:right;">Patient Registration Form</h4>
+ 
+        <form>
+            <div>
+                <label>Patient's Name(Last,First,MI):</label>
+                <input type="text" id="Patient Name" name="Patient name" size="50">
+           
+                <p>
+                    <label>Patient's Home Phone Number:</label>
+                    <input type="text" id="Phone number" name="Phone number">
+                    <label>Alternate Phone Number(cell or work):</label>
+                    <input type="text" id="alternate phone" name="alternate phone">
+                </p>
+            </div>
+            <div>
+               <label>E-Mail Address:</label>
+               <input type="text" id="email" name="email" size="50"> 
+            </div> 
+         
+            <div>
+                <label>Address:</label>
+                <input type="text" id="address" name="address" size="50">             
+                <lablel>Apt.#</lablel>
+                <input type="number" id="apt" name="apt">
+                <p>
+                    <label>City:</label>
+                    <input type="text" id="city" name="city">
+                    <label>State:</label>
+                    <input type="text" id="state" name="state">
+                    <label>Zip:</label>
+                    <input type="number" id="zip" name="zip"> 
+                </p>
+            </div>
+
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date" id="dob" name="dob">  &nbsp;&nbsp;&nbsp;
+                <label>Age:</label>
+                <input type="number" id="age" name="age"> &nbsp;&nbsp;&nbsp;
+                <label>Sex:</label>
+                <input type="checkbox" id="Male" name="Male">
+                <label for="male">Male</label>
+                <input type="checkbox" id="Female" name="Female">
+                <label for="female">Female</label> &nbsp;&nbsp;&nbsp;
+                <label>Social Security Number:</label>
+                <input type="number" id="ssn" name="ssn">
+            </div> 
+           
+            <div>
+                    <label>Marital Status:</label>
+               
+                    <input type="checkbox" id="married" name="married">
+                    <label for="married">Married</label>
+                    
+                    <input type="checkbox" id="single" name="single">
+                    <label for="single">Single</label>
+                    
+                    <input type="checkbox" id="divorced" name="divorced">
+                    <label for="divorced">Divorced</label>
+                   
+                    <input type="checkbox" id="Widowed" name="Widowed">
+                    <label for="Widowed">Widowed</label>
+            </div>    
+           
+        
+            <div style="padding:1px;">
+                <table>
+                    <tr>
+                        <td >
+                    <label>Patient's Employer:</label>
+                    <input type="text" id="Patient employer" name="Patient employer" size="50"> </td>
+                    <td class="vd" style="padding:15px">
+                    <label>Employment Status:</label>
+
+                    <input type="checkbox" id="full time" name="full time">
+                    <label for="full time">Full Time</label>
+
+                    <input type="checkbox" id="part time" name="part time">
+                    <label for="part time">Part time</label>
+
+                    <input type="checkbox" id="unemployed" name="unemployed">
+                    <label for="unemployed">unemployed</label>  </td></tr>
+
+                    <tr>
+                    <td> </td>
+                    <td class="vd" style="padding:15px">
+                        
+                    <input type="checkbox" id="retired" name="retired">
+                    <label for="retired">retired</label>
+
+                    <input type="checkbox" id="student" name="student">
+                    <label for="student">student</label>
+
+                    <input type="checkbox" id="other" name="other">
+                    <label for="other">other</label>
+                    <input type="text" id="state" name="state">
+                </td>
+            </tr>
+            </table>
+            </div>       
+      
+            <div>
+                    <label>Emergency Contact:</label>
+                    <input type="text" id="econtact" name="econtact" size="50">   
+                    <label>Relationship to Patient:</label>
+                    <input type="text" id="relative" name="relative"> 
+                    <p>
+                    <label>Address:</label>
+                    <input type="text" id="address" name="address" size="50">   
+                    <label>Phone number:</label>
+                    <input type="number" id="phone" name="phone"> 
+                    </p>
+            </div>
+
+        <div style="padding:1px;">
+            <table>
+                <tr>
+                   <td> <h5>INSURANCE INFORMATION</h5></td>
+                    <td class="vd"></td></tr>
+
+
+                <tr>
+                    <td>
+                    <label>Primary Insurance:</label>
+                    <input type="text" id="pinsurance" name="pinsurance">  </td> 
+                    <td class="vd" style="padding-left: 70px;">
+                        <label>Secondary Insurance:</label>
+                        <input type="text" id="sinsurance" name="sinsurance">   </td>
+                        </tr>
+                    <tr><td>
+                        <label>Patient is subscriber/Policy Holder:</label>
+                        <input type="checkbox" id="policy-yes" name="policy-yes"> Yes   
+                        <input type="checkbox" id="policy-no" name="policy-no"> No 
+                    </td>
+            
+                   <td class="vd" style="padding-left: 70px;">
+                
+                    <label>Patient is subscriber/Policy Holder:</label>
+                    <input type="checkbox" id="policy-yes" name="policy-yes"> Yes   
+                    <input type="checkbox" id="policy-no" name="policy-no"> No 
+                </td>
+                </tr>
+            </table>
+        </div>
+
+            <div>
+                <h5>INSURED INFORMATION (IF OTHER THAN PATIENT)-we will request to scan your ID and insurance card</h5>
+                <label>Subscriber/Policy Holder:</label>
+                <input type="text" id="subscriber" name="subscriber" size="50">
+                <label>Relationship to Patient:</label>
+                <input type="text" id="relative" name="relative"> 
+                <p>
+                    <label>Address:</label>
+                    <input type="text" id="address" name="address" size="50">     
+                </p>
+                <p>
+                    <label>Social Security number:</label>
+                    <input type="number" id="ssn" name="ssn"> 
+                </p>
+                <p>
+                    <label>Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">  
+                </p>
+                <p>
+                    <label>His or Her Employer:</label>
+                    <input type="text" id="employer" name="employer" size="40">
+                    <label>Work Phone number:</label>
+                    <input type="number" id="phone" name="phone"> 
+                </p>
+            </div>
+            <div>
+                <h5>RELEASE OF INFORMATION</h5>
+                <p>I hereby give permission to the person(s) listed below to receive information about the care of the above named patient.</p>
+                <p>
+                    <label>Name(s):</label>
+                    <input type="text" id="names" name="names" size="40">
+                    <label>Relationship to Patient:</label>
+                    <input type="text" id="relative" name="relative" size="30"> 
+                </p>
+            </div>
+            <div>
+                    <p>
+                    Inova Medical Camp reserves the right to charge a fee for any scheduled visits that are:</p>
+                    <ol>
+                    <li>  Cancelled with less than 24 hours notice </li>
+                    <li>  Are missed without calling to cancel (no show) </li>
+                    </ol>
+                    <p> Cancellation Fee schedule: New Patient:$50.00; Established Patitent:$35 </p>
+                    <p> <label>Patient/Parent or Guardian Signature:</label>
+                    <input type="text" id="sign" name="sign" size="40">
+                    <label>Date:</label>
+                    <input type="date" id="tdate" name="tdate"></p>
+             </div>
+        </form>
+</body>
+</html>
+
+
